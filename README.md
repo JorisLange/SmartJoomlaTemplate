@@ -1,2 +1,2 @@
 # SmartJoomlaTemplate
-Responsive basic template for Joomla, for start building your own template
+Responsive basic Joomla template, for start building your own template with Bootstrap (or other framwework).
