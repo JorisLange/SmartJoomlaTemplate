@@ -1,0 +1,7 @@
+Editor werking nalopen. Formulier elementen vooral.
+
+Voor editor is nodig:
+($this->_scripts[$this->baseurl .'/media/system/js/core.js']);
+Zou die conditioneel te laden zijn?
+
+

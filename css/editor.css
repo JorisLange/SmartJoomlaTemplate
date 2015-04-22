@@ -1,0 +1,106 @@
+/* EDITOR CSS
+*********************************************/
+body {
+	background-color: #fff;
+	color: #000;
+	font: normal normal normal 75%/125% arial,sans-serif;
+}
+
+img.full-100 {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+img.left-99 {
+	max-width: 99%;
+	padding: 0 1% 1% 0;
+	float:left;
+}
+img.left-66 {
+	max-width: 66%;
+	padding: 0 1% 1% 0;
+	float:left;
+}
+img.left-50 {
+	max-width: 50%;
+	padding: 0 1% 1% 0;
+	float:left;
+}
+img.left-33 {
+	max-width: 33%;
+	padding: 0 1% 1% 0;
+	float:left;
+}
+img.right-99 {
+	max-width: 99%;
+	padding: 0 0 1% 1%;
+	float:right;
+}
+img.right-66 {
+	max-width: 66%;
+	padding: 0 0 1% 1%;
+	float:right;
+}
+img.right-50 {
+	max-width: 50%;
+	padding: 0 0 1% 1%;
+	float:right;
+}
+img.right-33 {
+	max-width: 33%;
+	padding: 0 0 1% 1%;
+	float:right;
+}
+@media (max-width: 480px) {
+	img.left-99,
+	img.left-66,
+	img.left-50 {
+		max-width: 100%;
+		padding: 0 0 1% 0;
+		float: none;
+	}
+	img.left-33 {
+		max-width: 50%;
+		padding: 0 1% 1% 0;
+		float: left;
+	}
+	img.right-99,
+	img.right-66,
+	img.right-50 {
+		max-width: 100%;
+		padding: 0 0 1% 0;
+		float: none;
+	}
+	img.right-33 {
+		max-width: 50%;
+		padding: 0 0 1% 1%;
+		float: right;
+	}
+}
+
+.careful {
+	border: 2px solid red;
+	border-color: #53ccff; 
+	background-image: -webkit-linear-gradient(-45deg, #ffffff 25%, rgba(83, 204, 255, 0.25) 25%, rgba(83, 204, 255, 0.25) 50%, #ffffff 50%, #ffffff 75%, rgba(83, 204, 255, 0.25) 75%, rgba(83, 204, 255, 0.25)); 
+	background-image: -moz-linear-gradient(-45deg, #ffffff 25%, rgba(83, 204, 255, 0.25) 25%, rgba(83, 204, 255, 0.25) 50%, #ffffff 50%, #ffffff 75%, rgba(83, 204, 255, 0.25) 75%, rgba(83, 204, 255, 0.25)); 
+	background-image: -o-linear-gradient(-45deg, #ffffff 25%, rgba(83, 204, 255, 0.25) 25%, rgba(83, 204, 255, 0.25) 50%, #ffffff 50%, #ffffff 75%, rgba(83, 204, 255, 0.25) 75%, rgba(83, 204, 255, 0.25)); 
+	background-image: linear-gradient(-45deg, #ffffff 25%, rgba(83, 204, 255, 0.25) 25%, rgba(83, 204, 255, 0.25) 50%, #ffffff 50%, #ffffff 75%, rgba(83, 204, 255, 0.25) 75%, rgba(83, 204, 255, 0.25)); 
+	background-repeat: repeat; -webkit-background-size: 40px 40px; 
+	-moz-background-size: 40px 40px; 
+	-o-background-size: 40px 40px; 
+	background-size: 40px 40px;
+}
+.careful:before { 
+	content: "~~~ VOORZICHTIG, bevat complexe html structuur (arcering alleen in editor zichtbaar) ~~~ ";
+	color:red;
+}
+.careful:after {
+	clear: both;
+}
+
+.row {
+	width: 100%;
+}
+.row:after { 
+	clear: both; 
+}

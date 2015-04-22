@@ -1,0 +1,7 @@
+/* PRINT CSS
+*********************************************/
+@import url('editor.css');
+
+
+#header, #nav, #top, #left, #right, #above-content, #below-content, #bottom, #footer { display:none; }
+

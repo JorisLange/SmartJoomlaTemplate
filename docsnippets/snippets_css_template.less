@@ -1,0 +1,48 @@
+
+// Page header gelijk aan bovenrand
+.page-header {
+	margin-top: 0;
+}
+
+// Container, indien om divs heen, een schaduwtje
+.container {
+	background-color:#fff;
+	box-shadow: 1px 0px 8px 0px rgba(163, 163, 163, 0.75);
+}
+
+// Logo en pay-off in header, pay-off weg op xs devices
+#header {
+	height: 95px;
+}
+.logo {
+	float:left;
+	padding: 10px 0;
+}
+.pay-off {
+	float:left;
+	padding: 0 25px;
+	@media (max-width: 580px) {
+	padding: 0 10px;
+	}
+	@media (max-width: 546px) {
+		.hidden-xs;
+	}
+}
+
+#footer i.fa {
+	font-size: 20px;
+}
+
+// Panel met kleu en donkere header via transparantie
+.panel-default > .panel-heading {
+	background-color: rgba(200, 200, 200, .4);
+}
+.blauw .panel {
+	background-color: #EDF9F9; 
+}
+.groen .panel {
+	background-color: #d7f6d7; 
+}
+.grijs .panel {
+	background-color: #F9F9F9;
+} 

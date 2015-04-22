@@ -1,0 +1,62 @@
+SmartJoomlaTemplate biedt een kaal raamwerk voor eigen template bouw in Joomla, op basis van Joomla 3 en Bootstrap 3.
+
+In deze template verwerk ik alleen zaken die op veel websites van pas kunnen komen en leun ik zwaar op code van Alexander Schmidt op <http://blank.vc/> en PerfectWebTeam op <http://perfectwebteam.nl/expert-sessie/joomla-templating>. In de documentatie staat voorbeeldcode die in de bouwfase van pas kan komen. 
+
+
+In </docs/snippets logic.php> staan alternatieven voor </logic.php>
+In </docs/snippets index.php> staan alternatieven voor </index.php>
+Etc.
+
+Menu module moet in module positie navbar komen en Menu class achtervoegsel krijgen: ' navbar-nav' (met spatie).
+Twee opties voor dropdown menu-items (boven submenu-items):
+1. System link External URL naar '#'
+2. System link Menu-item alias naar eerste submenu-item
+(Nog uitzoeken of optie 2 zinvol is i.v.m. seo).
+Eerder moest de link style 'dropdown-toggle' zijn; maar dat lijkt niet meer nodig.
+
+In raamwerk staat module header boven navbar; vaak gebruikt voor logo 
+Indien gebruikt, dan geen navbar-fixed-top doen.
+Indein niet gebruitk, of verplaatsts naar onder nvabar, dan wel navbar-fixed-top doen.
+
+Bootstrap en jQuery
+In basis wordt een complete jQuery geladen, in de versie als genoemd op de Bootstrap site.
+In basis wordt een complete Bootstrap geladen, in de actuele versie van de Bootstrap site.
+
+Eigen style aanpassingen plaatsen in <\css\template.less>.
+Bootstrap style variabelen wijzigen in <\css\bootstrap\variables.less>.
+Bootstrap style onderdelen selectie wijzigen in <\css\bootstrap\bootstrap.less>.
+Bij eventuele updates deze 3 bestanden niet overschrijven!
+
+Bootstrap jQuery plugins staan in <\js\bootstrap.min.js>.
+Voor de productie site is dit te beperken tot alleen de benodigde onderdelen.
+Dat kan via de Customize pagina op de Bootstrap site.
+
+Eventueel is de eigen Bootstrap configuratie via de Customize pagina te bewaren (en hergebruiken) met <config.json>.
+
+
+
+
+
+Weblinks naar veel gebruikte bronnen:
+Bootstrap
+	http://getbootstrap.com/
+	http://getbootstrap.com/customize/
+	https://bootswatch.com/
+	http://www.helloerik.com/bootstrap-3-grid-introduction
+	http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works
+	http://www.helloerik.com/bootstrap-3-less-workflow-tutorial
+	http://www.bootply.com/bootstrap-3-migration-guide
+Blank Bootstrap Edition van Alexander Schmidt
+	http://blank.vc/
+	https://github.com/Bloggerschmidt/Blank-Bootstrap-Edition
+	http://b.blank.vc/
+	http://simplex.blank.vc/
+Basic Template van Sander Potjer
+	http://perfectwebteam.nl/expert-sessie/joomla-templating
+	https://github.com/perfectwebteam/basic-template
+Testen
+	https://developers.google.com/speed/pagespeed/insights/
+	https://www.google.com/webmasters/tools/mobile-friendly/
+Font awesome iconen
+	http://fortawesome.github.io/Font-Awesome/icons/
+	

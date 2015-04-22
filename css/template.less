@@ -1,0 +1,411 @@
+/* TEMPLATE LESS
+*********************************************/
+/*
+imports
+variables
+mixins
+main/general
+nav
+modules
+other
+images
+media queries
+joomla
+wireframe
+*/
+
+
+/* IMPORTS
+*********************************************/
+
+/* Bootstrap */
+@import "bootstrap/bootstrap.less";
+/* Font Awesome icons */
+@import "font-awesome/font-awesome.less";
+@fa-font-path: "../templates/smartjoomlatemplate/fonts"; /* path correction Font Awesome */
+/* Glyphicons icons */
+@icon-font-path: "../templates/smartjoomlatemplate/fonts/"; /* path correction Glyphicons */
+/* Google fonts */
+// @import url(http://fonts.googleapis.com/css?family=Artifika|Roboto+Slab:400,100,300,700);
+
+
+/* VARIABLES
+*********************************************/
+
+/* MIXINS
+*********************************************/
+
+
+/* MAIN/GENERAL
+*********************************************/
+/* List of basic template parts (other then modules):
+#mainbody, #content, #content-area
+*/
+
+html {
+	overflow-y: scroll; /* scrollbar fix (prevent ugly left pull for lower content sites) */
+}
+
+body {
+}
+
+.form-horizontal .control-label {
+	text-align: left;
+}
+
+.page-header {
+	margin-top: 0;
+}
+
+
+
+/* NAVIGATION / NAV MODULES
+*********************************************/
+
+.nav > li > a {
+	transition: all 0.25s ease-out 0s;
+}
+
+
+/* MODULES - OTHER THEN NAV
+*********************************************/
+/* List of modules: 
+#header, #top, #left, #right, #above-content, #below-content, #bottom, #footer
+*/
+
+.logo {
+	float:left;
+	padding: 10px 0;
+}
+.pay-off {
+	float:left;
+	padding: 0 25px;
+	@media (max-width: 580px) {
+	padding: 0 10px;
+	}
+	@media (max-width: 546px) {
+		.hidden-xs;
+	}
+}
+
+/* bootstrap search form fixes */
+#right ul.unstyled {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#right .form-control {
+	width: 100% !important;
+}
+.navbar div.search {
+	@media (max-width: 767px) {
+		padding: 0 0 20px 0;
+		width: 100%;
+	}
+}
+#mod-search-searchword {
+	@media (min-width: 768px) {
+		margin-top: 7px;
+	}
+}
+.form-group {
+	@media (min-width: 768px) {
+		padding: 5px 0;
+	}
+}
+
+#footer {
+	background-color: #F5F5F5;
+	border-top: 3px solid #555;
+	color: #777;
+	padding: 10px 0;
+}
+#footer i.fa {
+	font-size: 20px;
+}
+
+.socialmediashare {
+    margin: 40px 0;
+}
+.socialmediashare a .fa {
+	font-size: 25px;
+}
+
+
+/* OTHER
+*********************************************/
+
+
+
+/* IMAGES 
+*********************************************/
+
+img.full-100 {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+img.left-99 {
+	max-width: 99%;
+	padding: 0 1% 1% 0;
+	float:left;
+}
+img.left-66 {
+	max-width: 66%;
+	padding: 0 1% 1% 0;
+	float:left;
+}
+img.left-50 {
+	max-width: 50%;
+	padding: 0 1% 1% 0;
+	float:left;
+}
+img.left-33 {
+	max-width: 33%;
+	padding: 0 1% 1% 0;
+	float:left;
+}
+img.right-99 {
+	max-width: 99%;
+	padding: 0 0 1% 1%;
+	float:right;
+}
+img.right-66 {
+	max-width: 66%;
+	padding: 0 0 1% 1%;
+	float:right;
+}
+img.right-50 {
+	max-width: 50%;
+	padding: 0 0 1% 1%;
+	float:right;
+}
+img.right-33 {
+	max-width: 33%;
+	padding: 0 0 1% 1%;
+	float:right;
+}
+@media (max-width: 480px) {
+	img.left-99,
+	img.left-66,
+	img.left-50 {
+		max-width: 100%;
+		padding: 0 0 1% 0;
+		float: none;
+	}
+	img.left-33 {
+		max-width: 50%;
+		padding: 0 1% 1% 0;
+		float: left;
+	}
+	img.right-99,
+	img.right-66,
+	img.right-50 {
+		max-width: 100%;
+		padding: 0 0 1% 0;
+		float: none;
+	}
+	img.right-33 {
+		max-width: 50%;
+		padding: 0 0 1% 1%;
+		float: right;
+	}
+}
+
+
+
+
+/* MEDIA QUERIES
+*********************************************/
+
+/* Extra Extra small devices (phones, less than 380px) */
+@media (max-width: 380px) {
+	form-inline .form-control {
+		width: 100%;
+	}
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query -> mobile first strategy */
+
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1170px) {
+}
+
+/* for higher resolutions (android and retina) */
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (max--moz-device-pixel-ratio: 1.5) {
+}
+
+
+/* JOOMLA SPECIFIC
+*********************************************/
+[data-icon]:before {
+	font-family: 'FontAwesome';
+	content: attr(data-icon);
+	speak: none;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+	display: inline-block;
+	width: 18px;
+	height: 14px;
+	*margin-right: .3em;
+	line-height: 14px;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-family: 'FontAwesome';
+	font-style: normal;
+	speak: none;
+	display: inline-block;
+	width: 18px;
+}
+[class^="icon-"].disabled,
+[class*=" icon-"].disabled {
+	font-weight: normal;
+}
+/* uit core template views*/
+.icon-ok:before {content:"\f00c";} /* apply */
+.icon-cancel:before {content:"\f00d";} /* remove */
+.icon-plus:before {content:"\f067";} /* new */
+.icon-envelope:before {content:"\f003";}
+.icon-print:before {content:"\f02f";}
+.icon-calendar:before {content:"\f073";}
+.icon-eye-open:before {content:"\f06e";} /* publish */
+.icon-cog:before {content:"\f013";}
+.icon-chevron-right:before {content:"\f138";}
+.icon-search:before {content:"\f002";}
+.icon-list:before {content:"\f03a";}
+.icon-arrow-left:before {content:"\f060";}
+.icon-user:before {content:"\f007";}
+.icon-location:before {content:"\f124";}
+.icon-lock:before {content:"\f023";}
+.icon-star:before {content:"\f005";}
+.icon-help:before {content:"\f128";}
+.icon-arrow-right:before {content:"\f061";}
+.icon-edit:before {content:"\f044";}
+.icon-align-justify:before {content:"\f039";}
+/* uit overige core files */
+.icon-backward:before {content:"\f04a";}
+.icon-step-backward:before {content:"\f049";}
+.icon-step-forward:before {content:"\f050";}
+.icon-forward:before {content:"\f04e";}
+.icon-checkbox-partial:before {content:"\f046";}
+.icon-question-sign:before {content:"\f128";}
+.icon-archive:before {content:"\f187 ";}
+.icon-remove:before {content:"\f00d";}
+.icon-menu-2:before {content:"";}
+.icon-16-allow:before {content:"";}
+.icon-16-deny:before {content:"";}
+.icon-16-allowinactive:before {content:"";}
+.icon-16-denyinactive:before {content:"";}
+.icon-arrow-up-3:before {content:"\f062";}
+.icon-arrow-down-3:before {content:"\f063";}
+.icon-menu:before {content:"\f0c9";}
+.icon-16-unset:before {content:"";}
+.icon-16-allowed:before {content:"";}
+.icon-16-denied:before {content:"";}
+.icon-16-locked:before {content:"";}
+.icon-search:before {content:"\f002";}
+.icon-eye-close:before {content:"\f070";} /* publish */
+.icon-trash:before {content:"\f014";} /* delete */
+.icon-edit:before {content:"\f044";}
+.icon-th-large:before {content:"\f0c5";} /* copy */
+.icon-circle-arrow-left:before {content:"";} /* back */
+.icon-hdd:before {content:"\f0c7";} /* save */
+.icon-repeat:before {content:"\f01e";} /* save new */
+.icon-minus:before {content:"\f056";} /* remove */
+
+.icon-user:before {
+	content: "\f007";
+	font-family: "FontAwesome";
+	font-style: normal;
+	speak: none;
+	width: 18px;
+}
+.icon-lock:before {
+	content: "\f023";
+	font-family: "FontAwesome";
+	font-style: normal;
+	speak: none;
+	width: 18px;
+}
+/* editor form fields */
+div#jform_catid_chzn.chzn-container, div#jform_catid_chzn.chzn-container div.chzn-drop, div#jform_state_chzn.chzn-container, div#jform_state_chzn.chzn-container div.chzn-drop, div#jform_featured_chzn.chzn-container, div#jform_featured_chzn.chzn-container div.chzn- drop, div#jform_access_chzn.chzn-container, div#jform_access_chzn.chzn-container div.chzn-drop, div#jform_metadata_tags_chzn.chzn-container, div#jform_metadata_tags_chzn.chzn-container div.chzn-drop, div#jform_language_chzn.chzn- container, div#jform_language_chzn.chzn-container div.chzn-drop, div#jform_language_chzn.chzn-container, div#jform_tags_chzn.chzn-container {
+	width: 280px !important;
+}
+div#jform_tags_chzn.chzn-container ul.chzn-choices li.search-field input.default {
+	padding: 0;
+} 
+
+
+/* WIREFRAME
+*********************************************/
+/* works only in case of body page class 'wireframe' or 'grid' */
+
+/* List of modules:
+#header, #top, #left, #right, #above-content, #below-content, #bottom, #footer
+*/
+
+.wireframe #header, .wireframe #top, .wireframe #left, .wireframe #right, .wireframe #above-content, .wireframe #below-content, .wireframe #bottom, .wireframe #footer {
+	-webkit-box-shadow:inset 0 0 5px 5px #7D7D7D;
+	box-shadow:inset 0 0 5px 1px #7D7D7D;
+	background-color: rgba(105, 167, 219, 0.23);
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+/* List of basic template parts (other then modules):
+#mainbody, #content, #content-area
+*/
+.wireframe #mainbody {
+	background-color: #E8EFF4;
+}
+.wireframe #content {
+	background-color: #D6E7F5;
+}
+.wireframe #content-area {
+	background-color: #C0D9ED;
+}
+.wireframe #nav, .grid #nav {
+	margin-bottom: 0;
+}
+
+/* List of basic Bootstrap parts:
+.container, .row, .col
+*/
+.grid .container {
+	-webkit-box-shadow:inset 0 0 5px 5px #7D7D7D;
+	box-shadow:inset 0 0 5px 1px #7D7D7D;
+	background-color: hsla(170, 45%, 45%, .2);
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+.grid .row {
+	-webkit-box-shadow:inset 0 0 5px 5px #7D7D7D;
+	box-shadow:inset 0 0 5px 1px #7D7D7D;
+	background-color: hsla(170, 45%, 45%, .2);
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+.grid .col-md-3, .grid .col-md-4, .grid .col-md-5, .grid .col-md-6 {
+	-webkit-box-shadow:inset 0 0 5px 5px #7D7D7D;
+	box-shadow:inset 0 0 5px 1px #7D7D7D;
+	background-color: hsla(170, 45%, 45%, .2);
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
