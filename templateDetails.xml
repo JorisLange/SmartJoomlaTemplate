@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+
+<extension version="3.3" type="template" client="site" method="upgrade">
+	
+	<name>SmartJoomlaTemplate</name>
+	<creationDate>2015-04-17</creationDate>
+	<author>Joris Lange, Smart Joomla Websites</author>
+	<copyright>Copyright © 2015 smartjoomlawebsites.nl</copyright>
+	<authorEmail>smartjoomlatemplate@smartjoomlawebsites.nl</authorEmail>
+	<authorUrl>http://www.smartjoomlawebsites.nl/</authorUrl>
+	<version>3.8.5</version>
+	<description><![CDATA[ 
+		<h1>SmartJoomlaTemplate</h1>
+		<p>Created by <a href="http://www.smartjoomlawebsites.nl" target="_blank">Joris Lange, Smart Joomla Websites | smartjoomlawebsites.nl</a>.</p>
+	]]></description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>logic.php</filename>
+		<filename>offline.php</filename>
+		<filename>runless.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	
+	<positions>
+		<position>header</position>
+		<position>navbar</position>
+		<position>top</position>
+		<position>left</position>
+		<position>above-content</position>
+		<position>below-content</position>
+		<position>right</position>
+		<position>bottom</position>
+		<position>footer</position>
+		<position>debug</position>
+	</positions>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="runless" type="radio" default="1" label="Run Less Compiler" description="Aangeven of CSS live gecomprimeerd moet worden (tijdens development)">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
