@@ -4,7 +4,7 @@
 <extension version="3.3" type="template" client="site" method="upgrade">
 	
 	<name>SmartJoomlaTemplate</name>
-	<creationDate>2015-04-22</creationDate>
+	<creationDate>2015-04-21</creationDate>
 	<author>Joris Lange, Smart Joomla Websites</author>
 	<copyright>Copyright © 2015 smartjoomlawebsites.nl</copyright>
 	<authorEmail>smartjoomlatemplate@smartjoomlawebsites.nl</authorEmail>
